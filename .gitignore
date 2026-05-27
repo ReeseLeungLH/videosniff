@@ -1,0 +1,47 @@
+# === Python 字节码与缓存 ===
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.python-version
+
+# === 虚拟环境 ===
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# === 项目特有数据与日志 (不建议上传到 Git) ===
+# 迁移前的旧日志
+video_links_log.txt
+
+# 重构后的 JSONL 任务记录 (保护隐私及避免同步冲突)
+*.jsonl
+video_tasks.jsonl
+
+# 通用日志
+*.log
+
+# === 编辑器与系统文件 ===
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# === 配置文件备份 (可选) ===
+# 如果你不想把包含特定路径的 config.py 传上去，可以取消下面这一行的注释
+# config.py
+config.py

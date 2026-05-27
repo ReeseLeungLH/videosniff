@@ -1,0 +1,6 @@
+# 核心依赖
+playwright>=1.40.0
+requests>=2.31.0
+
+# 异步支持 (通常随 Python 3.7+ 自带，但列出以防万一)
+asyncio
