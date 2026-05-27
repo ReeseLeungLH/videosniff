@@ -17,10 +17,12 @@ playwright install chromium
 chrome.exe --remote-debugging-port=9222
 ```
 
-#### 3. 配置与运行
-*   **白名单**：修改 `config.temp.py` 为 `config.py`,修改当中的 `PAGE_DOMAINS`（目标网站）和 `API_URL`（下载器地址）。
+#### 3. 管理开启 [M3U8Downloader_H](https://github.com/Harlan-H/M3u8Downloader_H)
 
+管理员开启，确保API开启，所有下载和聚合均依赖 **M3U8Download_H**
 
+#### 4. 配置与运行
+*   **白名单**：修改 `config.py` 中的 `PAGE_DOMAINS`（目标网站）和 `API_URL`（下载器地址）。
 *   运行主程序：
 
 ```bash
@@ -38,4 +40,3 @@ python main.py
 ### 注意事项
 *   **补单逻辑**：启动时会自动检查 `video_tasks.jsonl`，若 `status` 不是 `OK` 或 `Exists`，则会自动重新尝试推送。
 *   **智能关闭**：如果推送成功后发现页面没关，请尝试切换一下标签页，脚本检测到 `hidden` 状态后会立即执行清理。
-
